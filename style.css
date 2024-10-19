@@ -13,7 +13,12 @@ body {
 
 .stuff {
   --ang: 0;
-  background: radial-gradient(circle at calc(50% - var(--ang)/360 * 80%) calc(50% - var(--ang)/90 * 80%), green 10%, #0000 0), repeating-conic-gradient(from calc(var(--ang) * 1deg), wheat 0deg 10deg, salmon 10deg 15deg, #0000 15deg 35deg), linear-gradient(calc(var(--ang) * 4deg), #0000 55%, orange 0 65%, #0000 0 75%, green 0 80%, #0000 0), repeating-radial-gradient(circle at center, #0000 0 calc(10% + var(--ang)/90 * 10%), pink calc(10% + var(--ang)/90 * 10%) calc(20% + var(--ang)/90 * 10%), #0000 0 50%), repeating-linear-gradient(calc(var(--ang) * -3deg), #0000 0 calc(10% + var(--ang)/90 * 20%), green calc(10% + var(--ang)/90 * 20%) calc(20% + var(--ang)/90 * 20%), #0000 0 40%);
+  background: radial-gradient(
+    circle at calc(50% - var(--ang)/360 *
+      80%) calc(50% - var(--ang)/90 * 80%), green 10%,
+    #0000 0
+  ),
+    repeating-conic-gradient(from calc(var(--ang) * 1deg), wheat 0deg 10deg, salmon 10deg 15deg, #0000 15deg 35deg), linear-gradient(calc(var(--ang) * 4deg), #0000 55%, orange 0 65%, #0000 0 75%, green 0 80%, #0000 0), repeating-radial-gradient(circle at center, #0000 0 calc(10% + var(--ang)/90 * 10%), pink calc(10% + var(--ang)/90 * 10%) calc(20% + var(--ang)/90 * 10%), #0000 0 50%), repeating-linear-gradient(calc(var(--ang) * -3deg), #0000 0 calc(10% + var(--ang)/90 * 20%), green calc(10% + var(--ang)/90 * 20%) calc(20% + var(--ang)/90 * 20%), #0000 0 40%);
   animation: rot 10s linear infinite;
 }
 
